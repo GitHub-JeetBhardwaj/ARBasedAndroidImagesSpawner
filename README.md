@@ -5,7 +5,7 @@ An Android Augmented Reality application built with **Unity 6 (`6000.6.9f1`)**, 
 ---
 
 ## Key Features
-* **Plug-and-Play Multi-Marker Scalability:** Tracks up to 5 distinct physical targets concurrently (`AceMarker`, `QueenMarker`, `KingMarker`, `IdMarker`, `RubiksMarker`). Expanding the system requires zero changes to the C# codebase—simply register a new target image in `WatchImageLibrary` and map its corresponding prefab in the Inspector.
+* **Plug-and-Play Multi-Marker Scalability:** Tracks up to 4 distinct physical targets concurrently (`AceMarker`, `QueenMarker`, `KingMarker`, `IdMarker`). Expanding the system requires zero changes to the C# codebase—simply register a new target image in `WatchImageLibrary` and map its corresponding prefab in the Inspector.
 * **glTF 2.0 / `.glb` Asset Pipeline:** Uses `com.unity.cloud.gltfast` to import and render PBR-textured, animated `.glb` models alongside `.fbx` prefabs.
 * **Dictionary-Backed Tracking Manager (`ARImageObjectTracker.cs`):** Maps reference image identifiers to individual prefabs, local placement offsets, and specific Animator states (`Take 001`, `allanims`) while preserving original prefab scales.
 * **Occlusion Persistence:** Keeps spawned 3D models active during momentary tracking interruptions (`TrackingState.Limited`) and cleanly triggers animations upon tracking recovery.
@@ -20,7 +20,6 @@ An Android Augmented Reality application built with **Unity 6 (`6000.6.9f1`)**, 
 | `QueenMarker` | `Queen.jpeg` | `phoenixprefab` | `0.03 m` | `Take 001` | Immersive Children's Storytelling |
 | `KingMarker` | `King.jpeg` | `coltprefab` | `0.03 m` | `Take 001` | Defense & Tactical Equipment Inspection |
 | `IdMarker` | `id.jpeg` | `RifleLoad` | Configured in library | `allanims` | Real-Time Weapon Loading & Drill Training |
-| `RubiksMarker` | `r.jpg` | `ARObject` | `0.50 m` | Default Layer 0 | 3D Object & Puzzle Visualization |
 
 ---
 
